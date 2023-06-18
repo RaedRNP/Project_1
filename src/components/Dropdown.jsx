@@ -9,7 +9,7 @@ function Dropdown(props) {
     <div className="relative items-center flex flex-col">
       <button
         onClick={() => setIsOpen((prev) => !prev)}
-        className="bg-blue-700 text-white w-28 h-8 flex items-center justify-center rounded-md"
+        className="bg-transparent text-white w-auto h-8 flex items-center justify-center rounded-md hover:underline"
       >
         {props.title}
         {!isOpen ? <IoCaretDownOutline /> : <IoCaretUpOutline />}

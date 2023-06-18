@@ -10,10 +10,10 @@ function Navbar() {
         </a>
       </div>
       <nav className="flex w-80 items-center justify-between">
-        <a href="#">About me</a>
-        <a href="#">Find me</a>
+        <a href="#" className="hover:underline">About me</a>
+        <a href="#" className="hover:underline">Find me</a>
         <div>
-            <Dropdown title="Categories" />
+            <Dropdown title="Projects" />
         </div>
       </nav>
     </header>
