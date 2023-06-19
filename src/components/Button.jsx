@@ -1,7 +1,7 @@
 function Button(props) {
     return (
         <>
-            <button className="bg-transparent border-solid border-2 border-black text-black rounded-lg py-1 px-5 transition hover:bg-black hover:text-white">
+            <button className="text-base tracking-wider font-medium bg-transparent border-solid border-2 border-white text-white rounded-lg py-2 px-14 transition hover:bg-white hover:text-[#203A43]">
                 {props.title}
             </button>
         </>
