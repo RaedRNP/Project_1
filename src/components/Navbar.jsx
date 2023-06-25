@@ -1,4 +1,5 @@
-import { IoLogoReact } from "react-icons/io5";
+import DropNav from "./DropNav"
+import imgURL from '../assets/logo.jpeg'
 import { Dropdown } from "./Dropdown";
 
 function Navbar() {
@@ -7,14 +8,14 @@ function Navbar() {
       id="Navbar"
       className="w-full h-20 flex bg-transparent text-white justify-between items-center px-12 absolute"
     >
-      <a href="/" className="flex">
+      <a href="/" className="flex items-center">
         <div>
-          <IoLogoReact className="text-2xl" />
+          <img src={imgURL} alt="logo" className="w-10 rounded-full" />
         </div>
         <h1 className="mx-4">Raed Nouredine</h1>
       </a>
 
-      <nav className="flex w-80 items-center justify-between">
+      <nav className="sm:flex w-80 items-center justify-between hidden">
         <a href="#" className="hover:underline">
           About me
         </a>
@@ -25,6 +26,10 @@ function Navbar() {
           Contact
         </a>
       </nav>
+
+      <div className="flex flex-col sm:hidden">
+        <DropNav />
+      </div>
     </header>
   );
 }
