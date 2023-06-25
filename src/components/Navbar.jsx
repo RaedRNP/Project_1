@@ -27,9 +27,9 @@ function Navbar() {
         </a>
       </nav>
 
-      <div className="flex flex-col sm:hidden">
+      <nav className="flex flex-col sm:hidden">
         <DropNav />
-      </div>
+      </nav>
     </header>
   );
 }
