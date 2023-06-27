@@ -3,8 +3,8 @@ import Sidebar from "../components/Sidebar"
 
 function Hero(){
     return (
-        <section className="h-screen w-full bg-gradient-to-br from-[#0f0c29] from-5% via-[#302b63] to-[#24243e] flex flex-col justify-center items-center text-white">
-            <h1 className="font-bold text-5xl my-10">HELLO, I'M RAED NOUREDINE</h1>
+        <section className="h-screen w-full bg-gradient-to-br from-[#fff] from-5% via-[#fff] to-[#f1f1f1] flex flex-col justify-center items-center text-black">
+            <h1 className="font-bold text-5xl my-10">HELLO, <span className="unique">I'M RAED NOUREDINE</span></h1>
             <p className="text-lg mb-10">Frontend Web Developer building the bests Websites you can dream of</p>
             <Button title="PROJECTS"/>
             <Sidebar />

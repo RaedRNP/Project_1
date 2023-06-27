@@ -17,3 +17,30 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+span {
+  letter-spacing: 0;
+  display: block;
+  margin: 0 auto;
+  text-shadow: 0 0 80px rgba(255,255,255,.5);
+  color: rgb(59, 7, 100);
+  animation: color-change 5s alternate infinite;
+}
+
+@keyframes color-change {
+  0% {
+    color: rgb(59, 7, 100);
+  }
+  25% {
+    color: rgb(88, 28, 135);
+  }
+  50% {
+    color: rgb(107, 33, 168);
+  }
+  75% {
+    color: rgb(113, 27, 188);
+  }
+  100% {
+    color: rgb(64, 22, 96);
+  }
+}

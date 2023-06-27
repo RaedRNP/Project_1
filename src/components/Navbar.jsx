@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <header
       id="Navbar"
-      className="w-full h-20 flex bg-transparent text-white justify-between items-center px-12 absolute"
+      className="w-full h-20 flex bg-purple-900 shadow-md text-white justify-between items-center px-12 absolute"
     >
       <a href="/" className="flex items-center">
         <div>
