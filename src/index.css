@@ -24,7 +24,7 @@ span {
   margin: 0 auto;
   text-shadow: 0 0 80px rgba(255,255,255,.5);
   color: rgb(59, 7, 100);
-  animation: color-change 5s alternate infinite;
+  animation: color-change 5s forwards infinite;
 }
 
 @keyframes color-change {
@@ -43,4 +43,13 @@ span {
   100% {
     color: rgb(64, 22, 96);
   }
+}
+
+#Hero {
+  background-color: #f1f1f1;
+  background-image: url("./assets/UDFXaX01.svg");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 50% auto;
+  padding: 100px 0 40px;
 }
