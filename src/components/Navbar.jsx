@@ -44,7 +44,7 @@ function Dropdown(props) {
         onClick={() => setIsOpen((prev) => !prev)}
         className="bg-transparent text-white w-auto h-8 flex items-center justify-center rounded-md hover:underline"
       >
-        {props.title}
+        {props}
         {!isOpen ? <IoCaretDownOutline /> : <IoCaretUpOutline />}
       </button>
       {isOpen && (
