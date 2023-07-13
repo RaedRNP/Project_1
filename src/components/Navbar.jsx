@@ -48,10 +48,10 @@ function Dropdown(props) {
         {!isOpen ? <IoCaretDownOutline /> : <IoCaretUpOutline />}
       </button>
       {isOpen && (
-        <div className="absolute w-screen sm:w-auto h-auto top-9 bg-purple-900 rounded-sm">
+        <div className="absolute w-screen sm:w-max h-auto top-14 bg-purple-900 rounded-b-sm">
           <ul className='flex flex-col items-center'>
           {categories.map((item, i) => (
-              <li className="py-5 px-10" key={i}>
+              <li className="py-5 px-4 hover:underline gap-1" key={i}>
                 <a href={`${item.path}`}>{item.title}</a>
               </li>
           ))}
