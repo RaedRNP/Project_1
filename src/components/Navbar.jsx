@@ -29,7 +29,7 @@ function Navbar() {
       </nav>
 
       <nav className="flex flex-col sm:hidden">
-        <DropNav />
+        <DropNavMobile />
       </nav>
     </header>
   );
@@ -48,21 +48,21 @@ function Dropdown(props) {
         {!isOpen ? <IoCaretDownOutline /> : <IoCaretUpOutline />}
       </button>
       {isOpen && (
-        <div className="absolute w-screen sm:w-auto h-auto top-9 bg-purple-900 flex flex-col items-center rounded-sm">
+        <div className="absolute w-screen sm:w-auto h-auto top-9 bg-purple-900 rounded-sm">
+          <ul className='flex flex-col items-center'>
           {categories.map((item, i) => (
-            <ul>
-              <li className="py-3 px-10" key={i}>
+              <li className="py-5 px-10" key={i}>
                 <a href={`${item.path}`}>{item.title}</a>
               </li>
-            </ul>
           ))}
+          </ul>
         </div>
       )}
     </div>
   );
 }
 
-function DropNav() {
+function DropNavMobile() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
