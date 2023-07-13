@@ -19,12 +19,12 @@ function Navbar() {
         <a href="#" className="hover:underline">
           About me
         </a>
-        <div>
-          <Dropdown title="Projects" />
-        </div>
         <a href="#" className="hover:underline">
           Contact
         </a>
+        <div>
+          <Dropdown title="Projects" />
+        </div>
       </nav>
 
       <nav className="flex flex-col sm:hidden">

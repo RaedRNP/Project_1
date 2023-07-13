@@ -15,11 +15,11 @@ function Dropdown(props) {
         {!isOpen ? <IoCaretDownOutline /> : <IoCaretUpOutline />}
       </button>
       {isOpen && (
-        <div className="absolute w-28 h-40 top-8 bg-blue-700 flex flex-col items-center rounded-sm">
+        <div className="absolute w-screen sm:w-auto h-auto top-9 bg-purple-900 flex flex-col items-center rounded-sm">
           {categories.map((item, i) => (
             <ul>
-              <li className="py-2" key={i}>
-                {item.title}
+              <li className="py-3 px-10" key={i}>
+                <a href={`${item.path}`}>{item.title}</a>
               </li>
             </ul>
           ))}

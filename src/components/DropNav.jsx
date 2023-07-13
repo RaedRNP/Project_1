@@ -11,16 +11,16 @@ export default function DropNav() {
         {!isOpen ? <IoMenu /> : <IoClose />}
       </button>
         {isOpen && (
-          <div className="absolute w-full h-64 top-20 right-0 bg-[#0f0c29] flex flex-col items-center justify-around rounded-sm shadow-2xl">
+          <div className="absolute w-full h-64 top-16 right-0 bg-purple-900 flex flex-col items-center justify-around rounded-sm shadow-2xl">
             <a href="#" className="hover:underline">
               About me
+            </a>
+            <a href="#" className="hover:underline">
+              Contact
             </a>
             <div>
               <Dropdown title="Projects" />
             </div>
-            <a href="#" className="hover:underline">
-              Contact
-            </a>
           </div>
         )}
     </>

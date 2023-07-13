@@ -1,7 +1,7 @@
 const categories = [
     {
-        title: "Project 1",
-        path: "../pages/"
+        title: "Kingdom Network",
+        path: "https://kingdomnetwork.com.ve/"
     },
     {
         title: "Project 2",
